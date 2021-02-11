@@ -1,0 +1,20 @@
+# Python code for creating number n of # staircase
+def stairs():
+    n = int(input("Number of staircases: "))  # this will take the input from user
+
+    number_of_chars = ""  # empty char variable
+    for i in range(0, n):  # that will display the range starting from 0 to n input
+        spaces = ""  # variable that will make a space
+        for j in range(n - i):  # new range
+            spaces += " "  # spaces to display # as staircase
+        number_of_chars += "#"  # this will create the #
+        staircase = spaces + number_of_chars  # assign ready staircase to a new variable
+
+        count = 0  # counter
+        if 0 < n <= 20:  # condition
+            while count <= n:  # set the counter to check if user input fulfills the condition
+                print(staircase)  # print if yes
+                break  # break the loop
+
+
+stairs()  # run a function
